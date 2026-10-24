@@ -19,7 +19,7 @@ use Pulse\Versions;
 
 final class PulseFactory
 {
-    public const VERSION = '0.0.1';
+    public const VERSION = '0.0.2';
     private const OPTIONS = [
         'key', 'endpoint', 'send', 'include', 'exclude', 'logs', 'log_level',
         'public_key', 'clear', 'relay_fingerprint', 'app_version', 'disabled',
@@ -54,7 +54,7 @@ final class PulseFactory
     {
         return new PackageMeta(
             'pulse-laravel',
-            Versions::of('pulse-app/pulse-laravel', self::VERSION) ?? self::VERSION,
+            Versions::of('pulse-si/laravel', self::VERSION) ?? self::VERSION,
             'laravel',
             $this->app->version(),
         );

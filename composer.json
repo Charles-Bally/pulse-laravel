@@ -1,5 +1,5 @@
 {
-    "name": "pulse-app/pulse-laravel",
+    "name": "pulse-si/laravel",
     "description": "Surveillance Pulse pour Laravel : signal de vie, base de données, Redis, files et tâches planifiées détectés tout seuls.",
     "type": "library",
     "license": "MIT",
@@ -12,7 +12,7 @@
     ],
     "require": {
         "php": ">=8.1",
-        "pulse-app/pulse-php": "^0.0.1",
+        "pulse-si/php": "^0.0.2",
         "illuminate/console": "^10.0|^11.0|^12.0|^13.0",
         "illuminate/contracts": "^10.0|^11.0|^12.0|^13.0",
         "illuminate/support": "^10.0|^11.0|^12.0|^13.0",

@@ -19,7 +19,7 @@ Une requête PHP est courte : le rapport ne part donc jamais d'une requête web.
 ## En deux minutes
 
 ```bash
-composer require pulse-app/pulse-laravel
+composer require pulse-si/laravel
 ```
 
 Le paquet est découvert tout seul par Laravel. Ajoute la clé que l'app Pulse t'affiche quand tu ajoutes une app :
@@ -189,7 +189,7 @@ Le mode sécurisé demande les extensions `sodium` et `openssl` de PHP (présent
 - **Rien n'est écrit chez toi.** Les contrôles ne font que lire (`SELECT 1`, `PING`, taille de la file), avec 5 secondes au plus. Le paquet n'écrit que dans `storage/pulse/`.
 - **Rien de superflu ne part.** Ni requête, ni donnée métier, ni variable d'environnement. Les messages d'erreur sont nettoyés et coupés à 300 caractères.
 - **La clé ne voyage qu'en HTTPS**, dans un en-tête, jamais dans une URL. Elle ne sert qu'à écrire l'état de cette app : elle n'ouvre pas ton compte.
-- **Une seule dépendance** en dehors de Laravel : `pulse-app/pulse-php`, qui n'utilise que des extensions courantes de PHP.
+- **Une seule dépendance** en dehors de Laravel : `pulse-si/php`, qui n'utilise que des extensions courantes de PHP.
 
 ## Variables
 
